@@ -1,5 +1,5 @@
 ## 🏢 Contexte
-Ce projet est conçu comme un système d'analyse des écarts pour un acteur du Retail en ligne (à partir d'un dataset de 400k transactions sur 10 mois). L'objectif est de transformer la donnée brute en leviers de performance en isolant les causes réelles de déviation par rapport au budget. L'analyse est réalisée via une modélisation Prix-Volume-Mix et à des matrices de décision propriétaires, l'outil permet de piloter l'offre commerciale et d'arbitrer l'allocation du capital sur les segments les plus rentables.
+Ce projet est conçu comme un système d'analyse des écarts pour un acteur du Retail en ligne (à partir d'un dataset de 400k transactions sur 10 mois). L'objectif est de transformer la donnée brute en leviers de performance en isolant les causes réelles de déviation par rapport au budget. L'analyse est réalisée via une modélisation Prix-Volume-Mix ainsi que des matrices décisionnelles, l'outil permet de piloter l'offre commerciale et d'arbitrer l'allocation du capital sur les segments les plus rentables.
 
 ## 🎯 Objectifs
 - **Industrialiser l'analyse des écarts** : Automatiser la décomposition de la variance du Chiffre d'Affaires (Bridge CA) via un moteur PVM (Price-Volume-Mix) pour expliquer chaque dollar de dérive budgétaire.
