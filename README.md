@@ -1,35 +1,61 @@
-## 🏢 Contexte
-Ce projet est conçu comme un système d'analyse des écarts pour un acteur du Retail en ligne (à partir d'un dataset de 400k transactions sur 10 mois). L'objectif est de transformer la donnée brute en leviers de performance en isolant les causes réelles de déviation par rapport au budget. L'analyse est réalisée via une modélisation Prix-Volume-Mix ainsi que des matrices décisionnelles, l'outil permet de piloter l'offre commerciale et d'arbitrer l'allocation du capital sur les segments les plus rentables.
+# 🏢 Système d'Analyse de Variance (PVM) & Pilotage de l'Offre
+
+Ce projet est conçu comme un système d'analyse des écarts pour un acteur du Retail en ligne. L'objectif est de transformer la donnée brute en outil d'analyse en isolant les causes réelles de déviation par rapport au budget. L'analyse est réalisée via une modélisation Prix-Volume-Mix ainsi que des matrices décisionnelles, l'outil permet de piloter l'offre commerciale et d'arbitrer l'allocation du capital sur les segments les plus rentables selon leur volatilité des ventes.
+
+---
+
+## 📊 Aperçu du Pilotage (Power BI)
+
+Le dashboard est structuré pour offrir une lecture multiniveaux, du KPI stratégique à l'analyse de corrélation granulaire.
+
+### 1. Synthèse Chiffre d'Affaires & Marge Brute
+Monitoring de la performance commerciale, répartition géographique et par segment d'activité.
+![Chiffre d'affaires et Marges](image_9cbc8b.jpg)
+
+### 2. Moteur d'Analyse de Variance (Bridge PVM)
+Visualisation de la décomposition mathématique de l'écart au budget par effet et par segment.
+![Bridge Analyse de Variance](image_9cbd03.jpg)
+
+### 3. Matrice Risque-Rendement & Corrélations
+Pilotage de l'offre selon la profitabilité et la volatilité des ventes de chaque segment et analyse de corrélations
+![Matrice Risque et Corrélation](image_9cbd43.jpg)
+
+---
 
 ## 🎯 Objectifs
-- **Industrialiser l'analyse des écarts** : Automatiser la décomposition de la variance du Chiffre d'Affaires (Bridge CA) via un moteur PVM (Price-Volume-Mix) pour expliquer chaque dollar de dérive budgétaire.
+- **Industrialiser l'analyse des écarts** : Automatiser la décomposition de la variance du Chiffre d'Affaires via un moteur PVM (Prix-Volume-Mix) pour expliquer l'écart avec le prévisionnel.
 - **Arbitrer l'offre via le Risque-Rendement** : Déployer une matrice de décision croisant **volatilité relative** et **taux de marge** pour identifier les segments "Cash Cows" et sécuriser les segments à risque.
 - **Modéliser les corrélations inter-segments** : Utiliser l'analyse matricielle pour détecter les synergies de ventes et optimiser le Mix Produit en fonction des comportements d'achat observés.
-- **Sécuriser la fiabilité financière** : Garantir une réconciliation mathématique à 100% entre le reporting transactionnel et les objectifs budgétaires (Zéro résidu inexpliqué).
+- **Sécuriser la fiabilité financière** : Garantir une réconciliation mathématique entre le réalisé et les objectifs budgétaires.
+
+---
 
 ## 🚀 Résultats
-- **Maîtrise de la Variance Analysis** : Réconciliation systématique d'un écart budgétaire de **43 972 $**. Le moteur isole précisément l'**effet Mix** (glissement de structure), permettant de comprendre pourquoi une hausse de volume peut diluer la rentabilité globale.
-- **Pilotage stratégique de l'offre** : Identification du segment *Kitchen & Dining* comme zone de risque majeure (-56k $ d'impact), déclenchant une alerte sur la cohérence du mix produit actuel.
-- **Audit de la volatilité relative** : Segmentation précise du portefeuille (ex: *Seasonal & Events* à 87,88% de volatilité), permettant d'ajuster les niveaux de stocks de sécurité et de préserver le BFR.
-- **Gain de productivité & Fiabilité** : Suppression des erreurs de saisie manuelle via un pipeline automatisé Python/Power BI, ramenant le cycle de production de l'analyse des écarts à quelques minutes.
+- **Maîtrise de l'analyse de variance** : Réconciliation à 100% de l'écart budgétaire et décomposition propre des effets Prix-Volume-Mix.
+- **Pilotage stratégique de l'offre** : Identification du segment *Kitchen & Dining* comme étant défaillant sur le mois étudié (**-56k $ d'impact**).
+- **Audit du rapport risque-rendement** : Etude des segments via le taux de marge et la volatilité des ventes, le découpage du graphique permettant de déterminer leur positionnement à travers un quadrant "risque-rendement". 
+- **Gain de productivité & Fiabilité** : Suppression des erreurs de saisie manuelle via un pipeline automatisé Python/Excel/Power BI, ramenant le cycle de production de l'analyse des écarts à quelques minutes.
 
-<img width="923" height="404" alt="Analyse de Variance PVM" src="https://github.com/user-attachments/assets/votre-image-pvm" />
+---
 
 ## 🔁 Workflow
-1. **Data Engineering** : Nettoyage et structuration d'un dataset massif (+500k lignes) sous Python.
+1. **Ingénierie de données** : Nettoyage et structuration d'un dataset d'environ 400k lignes transactionnelles sous Python.
 2. **Moteur d'Analyse des Écarts** : Modélisation de la décomposition PVM (Price, Volume, Mix) et réconciliation budgétaire automatisée.
-3. **Analyse Matricielle** : Calcul des matrices de corrélation et de volatilité relative (CV) pour le pilotage de l'offre.
+3. **Analyse Matricielle** : Calcul de la matrice de corrélation (avec pondération temporelle et de la volatilité relative (CV) pour le pilotage de l'offre.
 4. **Business Intelligence Decision-Ready** : Visualisation dynamique sous Power BI pour l'aide à la décision stratégique en CODIR.
 
+---
+
 ## 🏗️ Outils utilisés
-- **Power BI** : DAX (Analyse de la variance, Ratios de marge, Time Intelligence)
-- **Excel** (Export automatisé pour les opérationnels terrain)
-- **Python** : Pandas (Traitement de masse), NumPy (Calcul matriciel de la variance)
+- **Power BI** : Formules DAX
+- **Excel** : Export automatisé via Python
+- **Python** : Pandas (Traitement de masse), NumPy (Calcul matriciel de la variance et pondération temporelle)
+
+---
 
 ## 📁 Contenu du projet
-- **Etape 1** : Méthodologie mathématique de l'Analyse des Écarts (PVM).
-- **Etape 2** : Pilotage de l'Offre : Matrices de Risque, Rendement et Corrélations.
+- **Méthodologie & Présentation de l'analyse**
 
 ## Navigation
 Pour naviguer entre les différentes étapes du processus veuillez sélectionner les sous-branches nommées dans l'ordre d'exécution.
-<img width="1852" height="542" alt="Navigation" src="https://github.com/user-attachments/assets/votre-image-navigation" />
+![Navigation](image_navigation_github.jpg)
