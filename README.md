@@ -10,15 +10,15 @@ Le dashboard est structuré pour offrir une lecture multiniveaux, du KPI straté
 
 ### 1. Synthèse Chiffre d'Affaires & Marge Brute
 Monitoring de la performance commerciale, répartition géographique et par segment d'activité.
-![Chiffre d'affaires et Marges](image_9cbc8b.jpg)
+insérer image power bi
 
 ### 2. Moteur d'Analyse de Variance (Bridge PVM)
 Visualisation de la décomposition mathématique de l'écart au budget par effet et par segment.
-![Bridge Analyse de Variance](image_9cbd03.jpg)
+insérer image power bi
 
 ### 3. Matrice Risque-Rendement & Corrélations
 Pilotage de l'offre selon la profitabilité et la volatilité des ventes de chaque segment et analyse de corrélations
-![Matrice Risque et Corrélation](image_9cbd43.jpg)
+insérer image power bi
 
 ---
 
