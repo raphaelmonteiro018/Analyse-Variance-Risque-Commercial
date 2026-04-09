@@ -40,9 +40,9 @@ insérer image power bi
 
 ## 🔁 Workflow
 1. **Ingénierie de données** : Nettoyage et structuration d'un dataset d'environ 400k lignes transactionnelles sous Python.
-2. **Moteur d'Analyse des Écarts** : Modélisation de la décomposition PVM (Price, Volume, Mix) et réconciliation budgétaire automatisée.
-3. **Analyse Matricielle** : Calcul de la matrice de corrélation (avec pondération temporelle et de la volatilité relative (CV) pour le pilotage de l'offre.
-4. **Business Intelligence Decision-Ready** : Visualisation dynamique sous Power BI pour l'aide à la décision stratégique en CODIR.
+2. **Moteur d'Analyse des Écarts** : Modélisation de la décomposition PVM et réconciliation budgétaire automatisée.
+3. **Analyse Matricielle** : Calcul des matrices décisionnelles (matrice de corrélations et matrice risque-rendement).
+4. **Business Intelligence** : Visualisation dynamique sous Power BI pour l'aide à la décision.
 
 ---
 
