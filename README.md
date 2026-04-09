@@ -1,6 +1,6 @@
-# 🏢 Système d'Analyse de Variance (PVM) & Pilotage de l'Offre
+# 🏢 Système d'Analyse de Variance (Prix-Volume-Mix) & Pilotage de l'Offre
 
-Ce projet est conçu comme un système d'analyse des écarts pour un acteur du Retail en ligne. L'objectif est de transformer la donnée brute en outil d'analyse en isolant les causes réelles de déviation par rapport au budget. L'analyse est réalisée via une modélisation Prix-Volume-Mix ainsi que des matrices décisionnelles, l'outil permet de piloter l'offre commerciale et d'arbitrer l'allocation du capital sur les segments les plus rentables selon leur volatilité des ventes.
+Ce projet est conçu comme un système d'analyse des écarts pour un acteur du Retail en ligne. L'objectif est de transformer la donnée brute en outil d'analyse en isolant les causes de déviation par rapport au budget. L'analyse est réalisée via une modélisation Prix-Volume-Mix ainsi que des matrices décisionnelles, l'outil permet de piloter l'offre commerciale et d'arbitrer l'allocation du capital sur les segments les plus rentables selon leur volatilité des ventes (approche risque-rendement).
 
 ---
 
@@ -58,4 +58,4 @@ insérer image power bi
 
 ## Navigation
 Pour naviguer entre les différentes étapes du processus veuillez sélectionner les sous-branches nommées dans l'ordre d'exécution.
-![Navigation](image_navigation_github.jpg)
+insérer image navigation
