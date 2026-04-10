@@ -54,7 +54,7 @@ insérer image power bi
 ---
 
 ## 📁 Contenu du projet
-- **Méthodologie & Présentation de l'analyse**
+- **Méthodologie & Présentation de l'outil**
 
 ## Navigation
 Pour naviguer entre les différentes étapes du processus veuillez sélectionner les sous-branches nommées dans l'ordre d'exécution.
