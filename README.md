@@ -60,7 +60,7 @@ Le visuel central permet d'expliquer chaque dollar de dérive. Dans ce projet, i
 ### Quadrant Risque-Rendement
 Le dashboard Power BI segmente automatiquement le portefeuille :
 - **Segments Stables (Cash Cows)** : Marge élevée, faible volatilité.
-- **Segments Volatiles** : Nécessitent une surveillance accrue du BFR (ex: *Seasonal & Events* avec **87,88%** de volatilité).
+- **Segments Volatiles** : Nécessitent une surveillance accrue du BFR (ex: *Seasonal & Events* avec **X%** de volatilité).
 
 ---
 
