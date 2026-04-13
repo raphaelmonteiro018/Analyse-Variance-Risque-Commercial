@@ -6,14 +6,14 @@ Cette section détaille le fonctionnement technique de l'outil, la logique math�
 
 ## 🛠️ 1. Présentation de l'Outil & Workflow
 
-L'outil automatise l'intégralité de la chaîne de valeur analytique via une architecture Python robuste (`VarianceAnalyzer`) :
+L'outil automatise l'intégralité de la chaîne de valeur analytique via une architecture Python robuste :
 
-- **Ingénierie des données** : Traitement de 400 000 transactions avec **Regex Mapping** pour une catégorisation automatique des produits en 8 macro-familles stratégiques.
-- **Modélisation Financière** : Simulation d'un environnement P&L complet (injection de cibles de marge et coûts unitaires bruités) pour refléter la réalité opérationnelle.
+- **Ingénierie des données** : Traitement de 400 000 transactions avec **Regex Mapping** pour une catégorisation automatique des produits en 8 familles de produits.
+- **Modélisation Financière** : Simulation d'un environnement P&L (injection de cibles de marge et coûts unitaires à l'échelle individuelle) pour refléter la réalité opérationnelle.
 - **Calculs Haute Performance** : Utilisation de **NumPy** pour une exécution instantanée des calculs matriciels de variance, volatilité et corrélation.
 - **Restitution Hybride** : 
-    - **Power BI** : Pilotage stratégique et visuel pour le CODIR.
-    - **Excel** : Reporting opérationnel via `OpenPyxl` avec formatage conditionnel (Vert/Rouge) automatisé.
+    - **Power BI** : Pilotage stratégique et visuels explicites / dynamiques.
+    - **Excel** : Export uniformisé pret à l'emploi pour Power BI et scinder en plusieurs onglets pour faciliter la lecture ainsi que les controles.
 
 ---
 
@@ -48,7 +48,7 @@ Pour évaluer la santé des segments, le script calcule un **Coefficient de Vari
 ### Matrice de Corrélation
 Le moteur calcule la corrélation de Pearson entre les familles de produits :
 - **Synergies** : Identifier les segments qui se vendent simultanément.
-- **Optimisation du Mix** : Ajuster l'offre commerciale en fonction des comportements d'achat observés.
+- **Optimisation du Mix** : Ajuster l'offre commerciale en fonction des comportements d'achat observés (détecter de potentielles synergies pour des ventes croisées).
 
 ---
 
@@ -57,12 +57,17 @@ Le moteur calcule la corrélation de Pearson entre les familles de produits :
 ### Bridge de Variance
 Le visuel central permet d'expliquer chaque dollar de dérive. Dans ce projet, il a permis d'isoler un impact de **-56k $** sur le segment *Kitchen & Dining*, principalement dû à un effet Mix défavorable.
 
+<img width="968" height="681" alt="image" src="https://github.com/user-attachments/assets/66433f13-2e62-41b7-9062-c2eb94f17bb7" />
+
+
 ### Quadrant Risque-Rendement
 Le dashboard Power BI segmente automatiquement le portefeuille :
-- **Segments Stables (Cash Cows)** : Marge élevée, faible volatilité.
-- **Segments Volatiles** : Nécessitent une surveillance accrue du BFR (ex: *Seasonal & Events* avec **X%** de volatilité).
+- **Segments Stables (Cash Cows)** : Marge élevée, faible volatilité (en haut à gauche).
+- **Segments Volatiles** : Nécessitent une surveillance accrue du BFR (en bas à droite).
+
+<img width="1320" height="708" alt="image" src="https://github.com/user-attachments/assets/dec0c00c-524a-489b-af4d-eae18c37a1d7" />
 
 ---
 
 ## ✅ Conclusion
-En combinant la puissance de calcul de **Python** et la clarté de **Power BI**, cet outil transforme des millions de lignes de données en une feuille de route stratégique actionnable pour la direction financière.
+En combinant la puissance de calcul via **Python** et la clarté de **Power BI**, cet outil transforme une base de données "sale" en une feuille de route stratégique actionnable pour la direction financière.
