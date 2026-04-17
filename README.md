@@ -15,6 +15,22 @@ L'outil automatise l'intégralité de la chaîne de valeur analytique via une ar
     - **Power BI** : Pilotage stratégique et visuels explicites / dynamiques.
     - **Excel** : Export uniformisé pret à l'emploi pour Power BI et scinder en plusieurs onglets pour faciliter la lecture ainsi que les controles.
 
+### Détail de l'export automatisé - Excel
+- Le fichier étant trop lourd pour etre partagé voici les captures de l'export généré par le script :
+
+<img width="1860" height="678" alt="image" src="https://github.com/user-attachments/assets/b6e7b293-7b97-4b9c-8a0a-af29f2406fa1" />
+
+<img width="1897" height="670" alt="image" src="https://github.com/user-attachments/assets/c99fc48d-dbad-420e-b8e0-d19c153d5f54" />
+Les effets à 0 indiquent que le produit a été lancé sur le mois cloturé, il n'y a donc aucun précédent sur cet item.
+
+<img width="1503" height="680" alt="image" src="https://github.com/user-attachments/assets/38af317f-4780-4dde-8516-44092d7a7db9" />
+
+<img width="1043" height="674" alt="image" src="https://github.com/user-attachments/assets/3503f907-28bc-4c18-99c5-728ba0ec9ce4" />
+
+<img width="1045" height="679" alt="image" src="https://github.com/user-attachments/assets/c476f4b6-e627-40c8-bd96-f579316ec949" />
+
+<img width="1713" height="673" alt="image" src="https://github.com/user-attachments/assets/18fcd32f-8496-4fe2-97ba-28d7ef2a5fc0" />
+
 ---
 
 ## 📐 2. Méthodologie : Moteur de Variance PVM
